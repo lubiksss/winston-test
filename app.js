@@ -1,3 +1,5 @@
-import {logger} from './win.js'
+const logger = require('./win')
 
-logger.info("test")
+logger.logger.info("test")
+
+console.log(logger.process)

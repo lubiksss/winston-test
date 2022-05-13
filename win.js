@@ -1,4 +1,4 @@
-import winston from 'winston'
+const winston = require('winston')
 
 const logger = winston.createLogger({
     level: 'info',
@@ -44,4 +44,4 @@ if (process.env.NODE_ENV !== 'production') {
 // logger.debug('Hello again distributed logs');
 // logger.silly('Hello again distributed logs');
 
-export {logger}
+module.exports = {logger,process}
